@@ -5,7 +5,7 @@ body{
     margin: 0;
     padding: 0;
 }
-.footer, .container{
+.footer, .container, .container3, .container4{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -65,21 +65,21 @@ line-height: 38px;
 }
 .main{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #354147 ;
     align-items: center;
     width: 100%;
     
 }
-.container{
+.container, .container3, .container4{
     align-items: center;
     width: 100%;
 }
-.container .containerblock1, .container .containerblock2{
+.container .containerblock1, .container .containerblock2, .container3 .containerblock3, .containerblock4, .container4 .containerblock6, .containerblock5{
     width: 50%;
     justify-content: space-around;
 }
-.container .containerblock1 .count{
+.container .containerblock1 .count, .container3 .containerblock4 .count2, .container4 .containerblock6 .count3{
     font-family: 'Gilroy';
 font-style: normal;
 font-weight: 700;
@@ -90,7 +90,7 @@ opacity: 0.1;
 position: absolute;
 
 }
-.container .containerblock1 .linetext{
+.container .containerblock1 .linetext, .container3 .containerblock4 .linetext2, .container4 .containerblock6 .linetext3{
     font-family: 'Gilroy';
 font-style: normal;
 font-weight: 800;
@@ -101,7 +101,7 @@ text-transform: uppercase;
 color: #FBD784;
 margin-left: 20px;
 }
-.container .containerblock1 h2{
+.container .containerblock1 h2, .container3 .containerblock4 h2, .container4 .containerblock6 h2{
     font-family: 'Chronicle Display';
 font-style: normal;
 font-weight: 600;
@@ -109,7 +109,7 @@ font-size: 64px;
 line-height: 77px;
 color: #FFFFFF;
 }
-.container .containerblock1 p{
+.container .containerblock1 p, .container3 .containerblock4 p, .container4 .containerblock6 p{
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 700;
@@ -123,7 +123,7 @@ color: #FFFFFF;
 .container .containerblock1 {
     margin: 130px;
 }
-.container .containerblock1 .more{
+.container .containerblock1 .more, .container3 .containerblock4 .more2, .container4 .containerblock6 .more3{
     
 font-family: 'Gilroy';
 font-style: normal;
@@ -132,12 +132,21 @@ font-size: 18px;
 line-height: 22px;
 color: #FBD784;
 }
-.container .containerblock1 .line{
+.container .containerblock1 .line, .container3 .containerblock4 .line2, .container4 .containerblock6 .line3 {
     border-bottom: 2px solid #FBD784;
     width: 72px;
 }
-.linee{
+.container .containerblock1 .linee, .container3 .containerblock4 .linee2, .container4 .containerblock6 .linee3{
     display: flex;
     flex-direction: row;
     align-items: center;
+    
+}
+.section1{
+    margin-bottom: 200px;
+}
+.container3 .containerblock3, .containerblock4, .container4 .containerblock5, .containerblock6{
+    width: 50%;
+    justify-content: space-around;
+    margin: 130px;
 }
