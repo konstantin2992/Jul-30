@@ -1,15 +1,17 @@
 html, body{
-    height: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 body{
     margin: 0;
     padding: 0;
 }
-.footer, .container, .container3, .container4{
+.footer, .container, .container3, .container4, .header, .container5{
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: #354147;
+    
 }
 .footer .block1, .block2{
     width: 50%;
@@ -58,24 +60,25 @@ width: 300px;
     font-weight: 700;
     font-size: 24px;
 }
-.footer .block1 .logo{
+.footer .block1 .logo, .header .logo{
     font-family: 'Chronicle Display';
 font-size: 32px;
 line-height: 38px;
+color: #ffff;
 }
 .main{
     display: flex;
     flex-direction: column;
-    background-color: #354147 ;
+    
     align-items: center;
     width: 100%;
     
 }
-.container, .container3, .container4{
+.container, .container3, .container4, .container5{
     align-items: center;
     width: 100%;
 }
-.container .containerblock1, .container .containerblock2, .container3 .containerblock3, .containerblock4, .container4 .containerblock6, .containerblock5{
+.container .containerblock1, .container .containerblock2, .container3 .containerblock3, .containerblock4, .container4 .containerblock6, .containerblock5, .container5 .containerblock7{
     width: 50%;
     justify-content: space-around;
 }
@@ -90,7 +93,7 @@ opacity: 0.1;
 position: absolute;
 
 }
-.container .containerblock1 .linetext, .container3 .containerblock4 .linetext2, .container4 .containerblock6 .linetext3{
+.container .containerblock1 .linetext, .container3 .containerblock4 .linetext2, .container4 .containerblock6 .linetext3, .container5 .containerblock7 .linetext4{
     font-family: 'Gilroy';
 font-style: normal;
 font-weight: 800;
@@ -101,7 +104,7 @@ text-transform: uppercase;
 color: #FBD784;
 margin-left: 20px;
 }
-.container .containerblock1 h2, .container3 .containerblock4 h2, .container4 .containerblock6 h2{
+.container .containerblock1 h2, .container3 .containerblock4 h2, .container4 .containerblock6 h2, .container5 .containerblock7 h2{
     font-family: 'Chronicle Display';
 font-style: normal;
 font-weight: 600;
@@ -120,7 +123,7 @@ color: #FFFFFF;
  .container p, h2{
    width: 600px;
 }
-.container .containerblock1 {
+.container .containerblock1, .container3 .containerblock3, .container4 .containerblock6 {
     margin: 130px;
 }
 .container .containerblock1 .more, .container3 .containerblock4 .more2, .container4 .containerblock6 .more3{
@@ -145,8 +148,73 @@ color: #FBD784;
 .section1{
     margin-bottom: 200px;
 }
-.container3 .containerblock3, .containerblock4, .container4 .containerblock5, .containerblock6{
-    width: 50%;
+.header{
+    align-items: center;
     justify-content: space-around;
-    margin: 130px;
+}
+.header .nav a, .account a,  .containerblock8  a{
+    text-decoration: none;
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+color: #FFFFFF;
+}
+.head{
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.header .nav{
+    display: flex;
+    
+}
+.header .nav a{
+    margin-left: 30px;
+}
+.containerblock8{
+    writing-mode: vertical-rl;
+}
+ .container5{
+    width: 100%;
+    margin-bottom: 900px;
+    margin-top: 100px;
+}
+.containerblock8{
+    position: fixed;
+    margin-right: 1460px;
+}
+.containerblock8 i{
+    color: #fff;
+}
+.img18{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    margin-top: -150px;
+    
+}
+.main *{
+    z-index: 4;
+}
+.header *{
+    z-index: 5;
+}
+.img19{
+    position: absolute;
+    width: 101%;
+    z-index: 4;
+    margin-top: 350px;
+    margin-left: -5px;
+    
+}
+.img20{
+    position: absolute;
+    width: 100%;
+    margin-top: 924px;
+    
 }
