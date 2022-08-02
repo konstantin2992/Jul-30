@@ -7,31 +7,31 @@ body{
     margin: 0;
     padding: 0;
 }
-.footer, .container, .container3, .container4, .header, .container5{
+footer, .container, .container3, .container4, .header, .container5{
     display: flex;
     flex-direction: row;
     width: 100%;
     
 }
-.footer .block1, .block2{
+footer .block1, .block2{
     width: 50%;
 }
-.footer .block2{
+footer .block2{
     display: flex;
     justify-content: end;
     flex-direction: row;
 }
-.footer .block2 .list1, .list2{
+footer .block2 .list1, .list2{
     margin-right: 100px;
 }
-.footer .block1{
+footer .block1{
     margin-left: 100px;
 }
 
-.footer .block2 .list1 ul li, .footer .block2 .list2 ul li {
+footer .block2 .list1 ul li, footer .block2 .list2 ul li {
     list-style: none;
 }
-.footer .block2 .list1 ul li a, .footer .block2 .list2 ul li a{
+footer .block2 .list1 ul li a, footer .block2 .list2 ul li a{
     text-decoration: none;
     color: #ffff;
     
@@ -41,10 +41,10 @@ font-weight: 500;
 font-size: 18px;
 line-height: 32px
 }
-.footer .block2 .list1 ul, .footer .block2 .list2 ul{
+footer .block2 .list1 ul, footer .block2 .list2 ul{
     padding: 0;
 }
-.footer .block1 p{
+footer .block1 p{
     color: #ffff;
     font-family: 'Gilroy';
 font-style: normal;
@@ -53,14 +53,14 @@ font-size: 18px;
 line-height: 32px;
 width: 300px;
 }
-.footer .block2 p{
+footer .block2 p{
     color: #FBD784;
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
 }
-.footer .block1 .logo, .header .logo{
+footer .block1 .logo, .header .logo{
     font-family: 'Chronicle Display';
 font-size: 32px;
 line-height: 38px;
@@ -69,14 +69,14 @@ color: #ffff;
 .main{
     display: flex;
     flex-direction: column;
-    
+    background-color: #000;
     align-items: center;
     width: 100%;
-    
 }
 .container, .container3, .container4, .container5{
     align-items: center;
     width: 100%;
+    margin-bottom: 100px;
 }
 .container .containerblock1, .container .containerblock2, .container3 .containerblock3, .containerblock4, .container4 .containerblock6, .containerblock5, .container5 .containerblock7{
     width: 50%;
@@ -135,24 +135,23 @@ font-size: 18px;
 line-height: 22px;
 color: #FBD784;
 }
-.container .containerblock1 .line, .container3 .containerblock4 .line2, .container4 .containerblock6 .line3 {
+.container .containerblock1 .line, .container3 .containerblock4 .line2, .container4 .containerblock6 .line3, .container5 .containerblock7 .line4 {
     border-bottom: 2px solid #FBD784;
     width: 72px;
 }
-.container .containerblock1 .linee, .container3 .containerblock4 .linee2, .container4 .containerblock6 .linee3{
+.container .containerblock1 .linee, .container3 .containerblock4 .linee2, .container4 .containerblock6 .linee3, .container5 .containerblock7 .linee4{
     display: flex;
     flex-direction: row;
     align-items: center;
-    
 }
-.section1{
+ .section1{
     margin-bottom: 200px;
 }
 .header{
     align-items: center;
     justify-content: space-around;
 }
-.header .nav a, .account a,  .containerblock8  a{
+.header .nav a, .account a,  .containerblock8  a, .containerblock9 a{
     text-decoration: none;
     font-family: 'Gilroy';
 font-style: normal;
@@ -171,7 +170,6 @@ color: #FFFFFF;
 }
 .header .nav{
     display: flex;
-    
 }
 .header .nav a{
     margin-left: 30px;
@@ -185,8 +183,9 @@ color: #FFFFFF;
     margin-top: 100px;
 }
 .containerblock8{
-    position: fixed;
+    position: absolute;
     margin-right: 1460px;
+    margin-top: 200px;
 }
 .containerblock8 i{
     color: #fff;
@@ -196,7 +195,6 @@ color: #FFFFFF;
     width: 100%;
     z-index: 1;
     margin-top: -150px;
-    
 }
 .main *{
     z-index: 4;
@@ -209,12 +207,34 @@ color: #FFFFFF;
     width: 101%;
     z-index: 4;
     margin-top: 350px;
-    margin-left: -5px;
-    
+    margin-left: -5px; 
 }
 .img20{
     position: absolute;
     width: 100%;
     margin-top: 924px;
-    
+    opacity: 0.5;
+}
+.container4{
+    background-image: linear-gradient(0deg, black 60%, transparent);
+}
+footer{
+    background-color: #000;
+}
+.containerblock9{
+    position: absolute;
+    margin-left: 1460px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.containerblock9 a{
+    margin-top: 10px;
+}
+.container5 .containerblock7 h2{
+    width: 800px;
+    height: 200px;
+}
+.container5{
+    margin-left: 150px;
 }
